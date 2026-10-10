@@ -268,11 +268,11 @@ a {
 }
 
 .intro h2 {
-  max-width: 780px;
+  max-width: 620px;
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2rem, 5vw, 4rem);
-  line-height: 1.02;
+  font-size: clamp(1.6rem, 3.2vw, 2.55rem);
+  line-height: 1.12;
   font-weight: 700;
 }
 
@@ -372,7 +372,6 @@ details {
 summary {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 1rem;
   padding: 1rem 1.15rem;
   cursor: pointer;
@@ -407,18 +406,7 @@ details[open] summary::after {
 }
 
 .page-chip {
-  flex: 0 0 auto;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 62px;
-  padding: 0.22rem 0.45rem;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  color: var(--muted);
-  background: #fff;
-  font-size: 0.78rem;
-  font-weight: 800;
+  display: none;
 }
 
 .section-figure {
@@ -438,15 +426,20 @@ details[open] summary::after {
 
 .pdf-text {
   max-width: 100%;
-  white-space: pre-wrap;
+  white-space: normal;
   overflow-wrap: anywhere;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.02rem;
-  line-height: 1.7;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.65;
 }
 
 .pdf-text strong {
+  color: var(--blue);
   font-weight: 800;
+}
+
+.pdf-text p {
+  margin: 0.65rem 0;
 }
 
 .pdf-text a {
