@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Program Znanstvenik Povratnik | Vodič za povratak u Hrvatsku</title>
+    <meta name="description" content="Online vodič za znanstvenike povratnike u Hrvatsku, s poglavljima, pretraživanjem i otvorivim odjeljcima.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Preskoči na sadržaj</a>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">ZP</span>
+        <div>
+          <p>Program</p>
+          <h1>Znanstvenik povratnik</h1>
+        </div>
+      </div>
+      <div class="top-actions">
+        <button class="icon-button" id="toggleNav" type="button" aria-label="Prikaži poglavlja" title="Poglavlja">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a class="download" href="assets/vodic-znanstvenik-povratnik.pdf" download>Preuzmi PDF</a>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar" aria-label="Pregled poglavlja">
+        <div class="cover-panel">
+          <img src="assets/cover.png" alt="Naslovnica vodiča Znanstvenik povratnik">
+          <div>
+            <strong>Vodič za znanstvenike povratnike u Hrvatsku</strong>
+            <span>Izdanje: lipanj 2026., Zagreb</span>
+          </div>
+        </div>
+        <label class="search">
+          <span>Pretraži vodič</span>
+          <input id="searchInput" type="search" placeholder="npr. staž, plaća, projekti">
+        </label>
+        <nav id="chapterNav"></nav>
+      </aside>
+
+      <main id="content" class="reader" tabindex="-1">
+        <section class="intro">
+          <div>
+            <p class="eyebrow">Udruga Penkala</p>
+            <h2>Vodič za lakše snalaženje prije, tijekom i nakon povratka.</h2>
+            <p>Odaberite poglavlje s lijeve strane, zatim otvorite samo one odjeljke koji su vam trenutno važni. Vodič uključuje okvir programa, administrativne korake, sustav znanosti, financije, mjere potpore i korisne resurse.</p>
+          </div>
+          <div class="quick-card">
+            <span>Kontakt</span>
+            <a href="mailto:info@udruga-penkala.hr">info@udruga-penkala.hr</a>
+            <a href="https://www.udruga-penkala.hr/" target="_blank" rel="noreferrer">www.udruga-penkala.hr</a>
+          </div>
+        </section>
+
+        <div class="reader-toolbar">
+          <div>
+            <span id="sectionCount">0 odjeljaka</span>
+          </div>
+          <div class="toolbar-actions">
+            <button id="expandAll" type="button">Otvori sve</button>
+            <button id="collapseAll" type="button">Zatvori sve</button>
+          </div>
+        </div>
+
+        <section id="chapterMount" class="chapter-mount" aria-live="polite"></section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
